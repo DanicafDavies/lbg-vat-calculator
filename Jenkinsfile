@@ -5,7 +5,7 @@ pipeline {
     stage('Checkout') {
         steps {
           // Get some code from a GitHub repository
-          git branch: 'main', url: https:'//github.com/DanicafDavies/lbg-vat-calculator.git'
+          git branch: 'main', url: 'https://github.com/DanicafDavies/lbg-vat-calculator.git'
         }
     }
     stage('SonarQube Analysis') {
